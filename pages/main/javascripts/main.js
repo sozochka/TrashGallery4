@@ -8,7 +8,7 @@ function PreviewAnimation() {
     Preview.style.filter = 'brightness(.3)'
 }
 
-setTimeout(PreviewAnimation, 23000)
+setTimeout(PreviewAnimation, 4600)
 
 const Menu = document.getElementById('menu')
 
