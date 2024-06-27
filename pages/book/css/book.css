@@ -1,0 +1,182 @@
+body{
+    overflow-x: hidden;
+}
+nav{
+    position: fixed;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 94vw;
+    height: 44vw;
+    padding: 3vw;
+    z-index: 2;
+}
+
+nav > li{
+    font-size: 1.75vw;
+    text-shadow:
+    -.5vw -.5vw 0 #000,  
+     .5vw -.5vw 0 #000,
+    -.5vw  .5vw 0 #000,
+     .5vw  .5vw 0 #000;
+}
+
+#merch, #events, #travelGuide{
+    grid-row-start: 1;
+}
+
+#travelGuide{
+    justify-self: center;
+}
+
+#events{
+    justify-self: flex-start;
+}
+
+#merch{
+    justify-self: flex-end;
+}
+
+#aboutGallery, #onlineExhibition{
+    align-self: flex-end;
+}
+
+#onlineExhibition{
+    grid-column-start: 3;
+    justify-self: end;
+    white-space: nowrap;
+}
+
+p{
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+}
+
+main{
+    width: 94vw;
+    margin: 0 auto;
+    position: relative;
+    top: 8vw
+}
+
+#travelBlock{
+    display: flex;
+}
+
+#travelLeftBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#travelButtonOne{
+    margin: 1vw 3vw 0 0
+}
+
+button{
+    background-color: #000;
+    border: 2px dashed #fff;
+    padding: 1.5vw 1vw;
+    font-size: 1.25vw;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+#travelBlockVideo{
+    width: 48vw;
+}
+
+#travelRightBlock{
+    margin-left: 4vw;
+}
+
+#travelBlockText{
+    width: 27vw;
+}
+
+#travelBlockImage{
+    margin-top: 4vw;
+}
+
+.travelImage{
+    width: 25vw;
+}
+
+#travelImages{
+    display: flex;
+    margin-top: 10vw;
+}
+
+#travelImagesLeftBlock{
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#travelImagesLeftBlockDown{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5vw;
+}
+
+#travelImagesLeftBlockImageTwo{
+    position: relative;
+    top: 10vw;
+}
+
+#travelImagesRightBlock{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5vw 0;
+}
+
+#travelButtonTwo{
+    margin: 5vw 5vw 0 0;
+}
+
+#travelImagesTop, #travelImageOneTop, #travelImageTwoTop{
+    position: absolute;
+}
+
+#travelImageOneTop{
+    left: 15vw;
+    top: -2vw;
+}
+
+#travelImageTwoTop{
+    top: 27vw;
+}
+#toSite{
+    position: absolute;
+    bottom: -10vw;
+    left: 50vw;
+}
+
+#noWidth{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#noWidth > p{
+    font-size: 6.25vw;
+    letter-spacing: -1vw;
+}
+
+@media (max-width: 414px) {
+    #noWidth{
+        display: flex;
+    }
+    body > nav, body > main{
+        display: none;
+    }
+}

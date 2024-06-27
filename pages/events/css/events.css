@@ -1,0 +1,124 @@
+body{
+    overflow: hidden;
+}
+
+nav{
+    position: fixed;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 94vw;
+    height: 44vw;
+    padding: 3vw;
+}
+
+nav > li{
+    font-size: 1.75vw;
+    text-shadow:
+    -.5vw -.5vw 0 #000,  
+     .5vw -.5vw 0 #000,
+    -.5vw  .5vw 0 #000,
+     .5vw  .5vw 0 #000;
+}
+
+#merch, #events, #travelGuide{
+    grid-row-start: 1;
+}
+
+#events{
+    justify-self: center;
+}
+
+#travelGuide{
+    justify-self: flex-end;
+}
+
+#aboutGallery, #onlineExhibition{
+    align-self: flex-end;
+}
+
+#onlineExhibition{
+    grid-column-start: 3;
+    justify-self: end;
+    white-space: nowrap;
+}
+
+#postersMainWrapper{
+    width: 100%;
+    height: 0;
+    position: relative;
+    top: 20vw;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    user-select: none;
+}
+
+#postersMain{
+    width: 20vw;
+    height: 33vw;
+    top: 12%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-12deg) rotateY(0deg);
+    transition: .75s transform;
+}
+
+.postersWrapper{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+#firstPostersWrapper{
+    transform: rotateY(0deg) translateZ(22vw);
+}
+
+#secondPostersWrapper{
+    transform: rotateY(60deg) translateZ(22vw);
+}
+
+#thirdPostersWrapper{
+    transform: rotateY(120deg) translateZ(22vw);
+}
+
+#fourthPostersWrapper{
+    transform: rotateY(180deg) translateZ(22vw);
+}
+
+#fifthPostersWrapper{
+    transform: rotateY(240deg) translateZ(22vw);
+}
+
+.posters{
+    display: flex;
+}
+
+.posters > div:nth-child(2){
+    margin: 0 .75vw;
+}
+
+.posters img{
+    width: 100%;
+}
+
+.postersInfo{
+    margin-top: .5vw;
+}
+
+.postersInfo > h1{
+    font-size: .75vw;
+}
+
+.postersInfo p{
+    font-size: .75vw;
+}
+
+.postersInfo p:first-of-type{
+    padding: .5vw 0;
+}

@@ -1,0 +1,73 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    font-size: 1.75vw;
+}
+
+#menu{
+    display: none;
+}
+
+#preview{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+#preview > video{
+    object-fit: cover;
+}
+
+#merch{
+    top: 10vw;
+    left: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#events{
+    top: 2vw;
+    left: 35vw;
+}
+
+#building{
+    top: 25vw;
+    left: 25vw;
+}
+
+#travelGuide{
+    top: 25vw;
+    right: 20vw;
+}
+
+#onlineExhibition{
+    top: 5vw;
+    right: 5vw;
+}
+
+#buildingImage{
+    width: 15vw;
+}
+
+#travelGuideImage, #eventsImage, #onlineExhibitionImage{
+    width: 11.5vw;
+}
+
+#merchImage{
+    width: 17vw;
+}
+
+#menu > div{
+    position: absolute;
+}
+
+@media (max-width: 414px) {
+    #menu, #preview{
+        display: none;
+    }
+}
