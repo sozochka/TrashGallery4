@@ -16,4 +16,4 @@ function MenuShow() {
     Menu.style.display = 'block'
 }
 
-setTimeout(MenuShow, 23000)
+setTimeout(MenuShow, 4600)
